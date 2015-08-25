@@ -7,24 +7,26 @@
 
             $scope.navitems = [
                 {
-                    name: 'hw1',
-                    link: '#/hw1',
+                    name: 'Literature Report',
+                    link: '#/litreport',
                 }
             ];
 
         }])
         .controller('hwController', [function(){
             var vm = this;
-            vm.hw = {
+            vm.lit = {
                 hw1: {
-                    name: 'hw1',
+                    name: 'KLA: A New Algorithmic Paradigm for Parallel Graph Computations',
+                    reviewLink: 'KLA review.pdf',
+                    paperLink: 'KLA parallel graph computations.pdf'
                 },
             };
         }])
         .config(function($routeProvider) {
             $routeProvider
-                .when('/hw1', {
-                    templateUrl: 'hw.html',
+                .when('/litreport', {
+                    templateUrl: 'litreport.html',
                     controller: 'hwController',
                     controllerAs: 'hw',
                 });

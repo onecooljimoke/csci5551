@@ -9,6 +9,10 @@
                 {
                     name: 'Literature Report',
                     link: '#/litreport',
+                },
+                {
+                  name: 'Presentations',
+                  link: '#/presentation'
                 }
             ];
 
@@ -23,12 +27,26 @@
                 },
             };
         }])
+        .controller('presentationController', [function(){
+            var vm = this;
+            vm.slides = {
+                research: {
+                    name: 'Research Presentation',
+                    slideLink: 'Jeff Flower Presentation.pptx',
+                },
+            };
+        }])
         .config(function($routeProvider) {
             $routeProvider
                 .when('/litreport', {
                     templateUrl: 'litreport.html',
                     controller: 'hwController',
                     controllerAs: 'hw',
+                })
+                .when('/presentation',{
+                  templateUrl: 'presentation.html',
+                  controller: 'presentationController',
+                  controllerAs: 'p',
                 });
         });
 

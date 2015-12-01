@@ -11,8 +11,8 @@
                     link: '#/litreport',
                 },
                 {
-                  name: 'Presentations',
-                  link: '#/presentation'
+                  name: 'Project',
+                  link: '#/project'
                 }
             ];
 
@@ -34,6 +34,10 @@
                     name: 'Research Presentation',
                     slideLink: 'Jeff Flower Presentation.pptx',
                 },
+              project: {
+                name: 'Project Files',
+                slideLink: 'JeffFlowerGraphColoring.zip'
+              }
             };
         }])
         .config(function($routeProvider) {
@@ -43,7 +47,7 @@
                     controller: 'hwController',
                     controllerAs: 'hw',
                 })
-                .when('/presentation',{
+                .when('/project',{
                   templateUrl: 'presentation.html',
                   controller: 'presentationController',
                   controllerAs: 'p',

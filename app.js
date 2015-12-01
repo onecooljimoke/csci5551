@@ -7,7 +7,7 @@
 
             $scope.navitems = [
                 {
-                    name: 'Homeworks',
+                    name: 'Homework',
                     link: '#/homework',
                 },
                 {

@@ -34,6 +34,10 @@
                     name: 'Research Presentation',
                     slideLink: 'Jeff Flower Presentation.pptx',
                 },
+              implementation: {
+                name: 'Implementation Presentation',
+                slideLink: 'Jeff Flower Implementation.pptx'
+              },
               project: {
                 name: 'Project Files',
                 slideLink: 'JeffFlowerGraphColoring.zip'

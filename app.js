@@ -7,8 +7,8 @@
 
             $scope.navitems = [
                 {
-                    name: 'Literature Report',
-                    link: '#/litreport',
+                    name: 'Homeworks',
+                    link: '#/homework',
                 },
                 {
                   name: 'Project',
@@ -46,7 +46,7 @@
         }])
         .config(function($routeProvider) {
             $routeProvider
-                .when('/litreport', {
+                .when('/homework', {
                     templateUrl: 'litreport.html',
                     controller: 'hwController',
                     controllerAs: 'hw',

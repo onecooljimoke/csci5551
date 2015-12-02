@@ -1,6 +1,6 @@
 <div>
     <ul>
-      <li ng-repeat="slide in p.slides">
+      <li ng-repeat="slide in p.slides track by $index">
         <a href="{{slide.slideLink}}">{{slide.name}}</a>
       </li>
     </ul>

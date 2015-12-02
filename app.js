@@ -19,30 +19,37 @@
         }])
         .controller('hwController', [function(){
             var vm = this;
-            vm.lit = {
-                hw1: {
-                    name: 'KLA: A New Algorithmic Paradigm for Parallel Graph Computations',
-                    reviewLink: 'KLA review.pdf',
-                    paperLink: 'KLA parallel graph computations.pdf'
-                },
-            };
+            vm.hw = [
+              {
+                hw: 'HW1',
+                name: 'KLA: A New Algorithmic Paradigm for Parallel Graph Computations',
+                reviewLink: 'KLA review.pdf',
+                paperLink: 'KLA parallel graph computations.pdf'
+              },
+              {
+                hw: 'HW2',
+                name: 'Parallel Prefix Applications: Bin Packing',
+                reviewLink: 'Bin Packing Summary.docx',
+                paperLink: 'bin-packing.pdf'
+              }
+            ];
         }])
         .controller('presentationController', [function(){
             var vm = this;
-            vm.slides = {
-                research: {
+            vm.slides = [
+                {
                     name: 'Research Presentation',
                     slideLink: 'Jeff Flower Presentation.pptx',
                 },
-              implementation: {
+                {
                 name: 'Implementation Presentation',
                 slideLink: 'Jeff Flower Implementation.pptx'
-              },
-              project: {
+                },
+              {
                 name: 'Project Files',
                 slideLink: 'JeffFlowerGraphColoring.zip'
               }
-            };
+            ];
         }])
         .config(function($routeProvider) {
             $routeProvider

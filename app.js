@@ -31,6 +31,12 @@
                 name: 'Parallel Prefix Applications: Bin Packing',
                 reviewLink: 'Bin Packing Summary.docx',
                 paperLink: 'bin-packing.pdf'
+              },
+              {
+                hw: 'HW3',
+                name: 'EMM: A Scalable Shared Memory Multiprocessor Architecture',
+                reviewLink: 'em2-review.odt',
+                paperLink: 'em2-detailed.pdf'
               }
             ];
         }])

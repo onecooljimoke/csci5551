@@ -1,0 +1,14 @@
+<div>
+    <md-content>
+        <md-card ng-repeat="report in team.hw">
+            <md-card-content>
+                <p>HW {{report.hwnum}}: {{report.description}}</p>
+                <p>Author: {{report.by}}</p>
+                <p>
+                    <a ng-if="!(report.paperlink === '')"href="{{report.paperlink}}">Reference Paper</a>
+                    <a href="{{report.reviewlink}}">Review</a>
+                </p>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>

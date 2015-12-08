@@ -11,6 +11,10 @@
                     link: '#/homework',
                 },
                 {
+                  name: 'Team Assignments',
+                  link: '#/teamassignments'
+                },
+                {
                   name: 'Project',
                   link: '#/project'
                 }
@@ -25,18 +29,6 @@
                 name: 'KLA: A New Algorithmic Paradigm for Parallel Graph Computations',
                 reviewLink: 'KLA review.pdf',
                 paperLink: 'KLA parallel graph computations.pdf'
-              },
-              {
-                hw: 'HW2',
-                name: 'Parallel Prefix Applications: Bin Packing',
-                reviewLink: 'Bin Packing Summary.docx',
-                paperLink: 'bin-packing.pdf'
-              },
-              {
-                hw: 'HW3',
-                name: 'EMM: A Scalable Shared Memory Multiprocessor Architecture',
-                reviewLink: 'em2-review.odt',
-                paperLink: 'em2-detailed.pdf'
               }
             ];
         }])
@@ -57,6 +49,39 @@
               }
             ];
         }])
+        .controller('teamCtrl', [function(){
+          var vm = this;
+          vm.hw = [
+            {
+              hwnum: "2",
+              description: "Parallel Algorithm Impressions",
+              by: "Grant Myers",
+              reviewlink: "hw2-impressions.docx",
+              paperlink: ""
+            },
+            {
+              hwnum: "2",
+              description: "Prefix Application - Quicksort",
+              by: "Sushma Murthy",
+              reviewlink: "parallel-quicksort.docx",
+              paperlink: "https://www.cs.cmu.edu/~guyb/papers/Ble93.pdf"
+            },
+            {
+              hwnum: "2",
+              description: "Prefix Application - Bin Packing",
+              by: "Jeff Flower",
+              reviewlink: 'Bin Packing Summary.docx',
+              paperlink: 'bin-packing.pdf'
+            },
+            {
+              hwnum: "3",
+              description: "Architecture Example - EMM",
+              by: "Jeff Flower",
+              reviewLink: 'em2-review.odt',
+              paperLink: 'em2-detailed.pdf'
+            },
+          ];
+        }])
         .config(function($routeProvider) {
             $routeProvider
                 .when('/homework', {
@@ -68,7 +93,12 @@
                   templateUrl: 'presentation.html',
                   controller: 'presentationController',
                   controllerAs: 'p',
-                });
+                })
+               .when('/teamassignments',{
+                 templateUrl: 'teamassignments.html',
+                 controller: 'teamCtrl',
+                 controllerAs: 'team',
+               });
         });
 
 })();

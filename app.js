@@ -56,30 +56,37 @@
               hwnum: "2",
               description: "Parallel Algorithm Impressions",
               by: "Grant Myers",
-              reviewlink: "hw2-impressions.docx",
+              reviewlink: "./hw2-impressions.docx",
               paperlink: ""
             },
             {
               hwnum: "2",
               description: "Prefix Application - Quicksort",
               by: "Sushma Murthy",
-              reviewlink: "parallel-quicksort.docx",
+              reviewlink: "./parallel-quicksort.docx",
               paperlink: "https://www.cs.cmu.edu/~guyb/papers/Ble93.pdf"
             },
             {
               hwnum: "2",
               description: "Prefix Application - Bin Packing",
               by: "Jeff Flower",
-              reviewlink: 'Bin Packing Summary.docx',
-              paperlink: 'bin-packing.pdf'
+              reviewlink: "./Bin Packing summary.docx",
+              paperlink: "./bin-packing.pdf"
             },
             {
               hwnum: "3",
-              description: "Architecture Example - EMM",
+              description: "Architecture - em2",
               by: "Jeff Flower",
-              reviewLink: 'em2-review.odt',
-              paperLink: 'em2-detailed.pdf'
+              reviewlink: "./em2-review.odt",
+              paperlink: "./em2-detailed.pdf"
             },
+            {
+              hwnum: "3",
+              description: "Architecture",
+              by: "Grant Myers",
+              reviewlink: "./grant-hw3.docx",
+              paperlink: ""
+            }
           ];
         }])
         .config(function($routeProvider) {
